@@ -84,7 +84,7 @@ def user_login(request):
 
 
 
-genai.configure(api_key="AIzaSyCXx_kkGXofjzQlv5vOm6jOHdHCX5t4PXA")
+genai.configure(api_key="enter your api key")
 
 
 def chatbot(request):
