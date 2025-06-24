@@ -1,0 +1,136 @@
+/* General Reset */
+body, h1, h2, h3, p, input, button, form {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Full Page Styling */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Medical Chatbot Heading */
+.medical-chatbot-heading {
+    font-size: 48px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: hsl(322, 100%, 50%); /* Eye-catching color */
+    text-align: center;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
+}
+
+/* Centered Form Container */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 50%;
+    max-width: 400px;
+}
+
+/* Headings */
+h1 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Text */
+p {
+    color: #666;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Buttons */
+button {
+    background-color: hsl(322, 100%, 50%);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 100%;
+}
+
+button:hover {
+    background-color: hsl(322, 100%, 40%);
+}
+
+/* Links */
+a {
+    color: hsl(322, 100%, 50%);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Chat Box */
+.chat-container {
+    width: 50%;
+    max-width: 600px;
+    height: 70vh;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chat-message {
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+
+.user-message {
+    background-color: hsl(322, 100%, 50%);
+    color: white;
+    align-self: flex-end;
+}
+
+.bot-message {
+    background-color: #f1f1f1;
+    align-self: flex-start;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        width: 80%;
+    }
+    .chat-container {
+        width: 90%;
+    }
+}
